@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- <script type="text/javascript" src="./Library/ace/src/ace.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ext-language_tools.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <title>JavaScript実行環境</title>
+    <style type="text/css">
+        html,body {
+            width: 100%; 
+            height: 100%;
+            margin: 0;
+        }  
+        .main {
+            letter-spacing:normal;
+            width: 50%; 
+            display: inline-block;
+            vertical-align: middle;
+            height: 400px;
+        }
+        .test {
+            letter-spacing:-10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Aceを使って作成しました</p>
+    <div class="test">
+        <pre class="main" id="editor">console.log("Hello World");</pre>
+        <!-- <pre class="main" id="result"></pre> -->
+        <iframe class="main" id="log"></iframe>
+    </div>
+    <button type="button" onclick="clear_value()">clear</button>
+    <button type="button" onclick="button_write()">renewal</button> 
+</body>
+</html>
